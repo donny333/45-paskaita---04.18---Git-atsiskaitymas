@@ -1,5 +1,5 @@
 header{
-    padding-top: 13.5rem;
+    padding-top: 14rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,14 +28,12 @@ header > table{
     width: 100%;
     margin-top: 0px;
     border-collapse: collapse;
-    /* border: 2px solid white; */
-
 }
 
 header > table td:first-of-type{
     border-bottom: 1px solid white;
     border-right: 1px solid white;
-    height: 4rem;
+    height: 3.5rem;
 }
 header > table td:last-of-type{
     border-bottom: 1px solid white;
