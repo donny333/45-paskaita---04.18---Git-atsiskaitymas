@@ -1,1 +1,57 @@
-@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");/*# sourceMappingURL=main.css.map */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body{   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/resources/bg.jpg");
+    /* background-position: center; */
+    background-position-x: center;
+    background-position-y:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0.5rem;
+
+
+}
+
+header{
+    padding-top: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header > div > img {
+    width: 40px;
+    position: absolute;
+    left: 33%;
+    top: 33%;
+
+}
+
+#circle{
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 75px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+header > table{
+    width: 100%;
+    margin-top: 0px;
+    border-collapse: collapse;
+    /* border: 2px solid white; */
+
+}
+
+header > table td:first-of-type{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    height: 4rem;
+}
+header > table td:last-of-type{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
