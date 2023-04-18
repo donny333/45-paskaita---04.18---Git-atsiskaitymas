@@ -18,6 +18,7 @@ export default class Tab{
         this.imageX.setAttribute('src', './images/resources/xmark-solid.svg');
         this.imageX.setAttribute('alt', 'x mark');
         this.topDiv.append(this.header, this.imageX);
+        this.remove();
 
         if(this.isVideo === true){
             this.mediaElement = document.createElement('video');
@@ -28,22 +29,33 @@ export default class Tab{
         } else {
             this.mediaElement = document.createElement('img');
             this.mediaElement.setAttribute('src', this.source);
-            console.log(this.source)
         }
         
         this.tab.append(this.topDiv, this.mediaElement)
 
-        console.log(this.paragraphs)
-
-        // this.paragraphs.forEach(paragraphText => {
-        //     this.paragraph = document.createElement('p');
-        //     this.paragraphTextText = document.createTextNode(paragraphText);
-        //     this.paragraph.appendChild(paragraphTextText);
-        //     this.tab.appendChild(paragraph);
-        // })
+        this.paragraphs.forEach(paragraphText => {
+            this.par = document.createElement('p');
+            this.parText = document.createTextNode(paragraphText);
+            this.par.appendChild(this.parText);
+            this.tab.appendChild(this.par);
+        })
+        
+            this.headerSection = document.querySelector('header');
+            this.headerSection.classList.add('displayNone');
+    
+            this.main = document.querySelector('main');
+            this.main.classList.add('displayNone');
         
         document.querySelector('body').appendChild(this.tab)
         return this.tab
+    }
+    remove(){
+        (this.imageX).addEventListener('click', () => {            
+            this.tab.remove();
+            this.headerSection.classList.remove('displayNone');
+            this.main.classList.remove('displayNone');
+
+        })
     }
 
 }
