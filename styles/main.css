@@ -113,6 +113,7 @@ p > a:hover{
     }
     #info > button{
     padding: 1rem 0rem;
+    margin-bottom: 10rem;
     }
     #info button:first-child{
         border-top-left-radius: 0.3rem;

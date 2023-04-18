@@ -8,7 +8,7 @@ export default class Tab{
     }
     render(){
         this.tab = document.createElement('section');
-        this.tab.setAttribute('id', 'modal');
+        this.tab.setAttribute('id', 'tab');
 
         this.topDiv = document.createElement('div');
         this.header = document.createElement('h1');

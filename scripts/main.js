@@ -1,4 +1,4 @@
-import Tab from "./modal.js";
+import Tab from "./tab.js";
 
 fetch('./scripts/db.json')
     .then(res => res.json())
