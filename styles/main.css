@@ -27,6 +27,10 @@ p > a {
     text-underline-offset: 4px;
 }
 
+p > a:hover{
+    color:rgba(151, 151, 255, 0.689);
+}
+
 #hero{
     text-align: center;
     color: white;
@@ -63,11 +67,26 @@ p > a {
     border-left: 1px solid white;
 }
 
-.infoUnit{
+#info button{
     border: 1px solid white;
-    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    width: 100%;
+    color: var(--grayText);
+    font-weight: 100;
+    padding: 0.5rem 0rem;
 }
 
-.infoUnit > p{
-    text-align: center;
+#info button:first-child{
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+#info button:last-child{
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+#info button:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
 }
