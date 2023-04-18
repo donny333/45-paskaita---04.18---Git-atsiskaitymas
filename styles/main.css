@@ -1,5 +1,9 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
+:root{
+    --grayText:rgb(203, 199, 199);
+}
+
 body{   
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/resources/bg.jpg");
     /* background-position: center; */
@@ -8,6 +12,43 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0.5rem;
+}
 
+p {
+    color: var(--grayText);
+    text-align: justify;
+}
 
+p > a {
+    color: var(--grayText);
+    text-decoration-style:dotted;    
+    text-underline-offset: 4px;
+}
+
+#hero{
+    text-align: center;
+    color: white;
+}
+
+#hero > h1 {
+    margin-top: 2rem;
+}
+
+#hero > table{
+    width: 100%;
+    margin-top: 0px;
+    border-collapse: collapse;
+    margin-top: 2rem;
+
+}
+
+#hero > table td:first-of-type{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    height: 4rem;
+}
+
+#hero > table td:last-of-type{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
 }
