@@ -28,10 +28,20 @@
 
 #modal > div > img {
     height: 3.5rem;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+#modal > div > img:hover{
+    transform: rotate(90deg);
 }
 
 
 #modal > video{
+    width: 100%;
+}
+
+#modal > img{
     width: 100%;
 }
 
