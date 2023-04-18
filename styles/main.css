@@ -90,7 +90,7 @@ p > a:hover{
     cursor: pointer;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 670px){
     #hero > p {
         text-align: center;
     }
@@ -113,6 +113,7 @@ p > a:hover{
     }
     #info > button{
     padding: 1rem 0rem;
+    margin-bottom: 10rem;
     }
     #info button:first-child{
         border-top-left-radius: 0.3rem;
