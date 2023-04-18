@@ -31,24 +31,39 @@ p > a {
 }
 
 #hero > h1 {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    font-size: 3rem;
+}
+
+#hero > p {
+    line-height: 1.5rem;
 }
 
 #hero > table{
     width: 100%;
     margin-top: 0px;
     border-collapse: collapse;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 
 }
 
 #hero > table td:first-of-type{
     border-top: 1px solid white;
     border-right: 1px solid white;
-    height: 4rem;
+    height: 3.5rem;
 }
 
 #hero > table td:last-of-type{
     border-top: 1px solid white;
     border-left: 1px solid white;
+}
+
+.infoUnit{
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+.infoUnit > p{
+    text-align: center;
 }
