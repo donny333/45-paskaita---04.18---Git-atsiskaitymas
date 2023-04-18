@@ -1,5 +1,5 @@
 header{
-    padding-top: 14rem;
+    padding-top: 13.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@ header > div > img {
     position: absolute;
     left: 33%;
     top: 33%;
-
+    
 }
 
 #circle{
@@ -33,9 +33,15 @@ header > table{
 header > table td:first-of-type{
     border-bottom: 1px solid white;
     border-right: 1px solid white;
-    height: 3.5rem;
+    height: 4rem;
 }
 header > table td:last-of-type{
     border-bottom: 1px solid white;
     border-left: 1px solid white;
+}
+
+@media only screen and (min-width: 900px){
+    header{
+        padding-top: 20.4rem;
+    }
 }
