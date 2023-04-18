@@ -6,9 +6,8 @@
 
 body{   
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/resources/bg.jpg");
-    /* background-position: center; */
     background-position-x: center;
-    background-position-y:0;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0.5rem;
